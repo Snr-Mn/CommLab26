@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.punchMonkey{
+    width: 200px;
+    background-color: whitesmoke;
+}
+
+.punchWrapper:hover {
+    background-color: aqua;
+}
+
+.punchWrapper{
+    display: inline-block;
+    border: 1px dashed black;
+    width: 20%;
+    margin-bottom: 20px;
+    /* margin-left: 44px; */
+
+}
+
+.punchWrapper:nth-child(even):hover{
+    background-color: aqua;
+}
+
+.punchWrapper:nth-child(odd):hover{
+    background-color: red;
+}
