@@ -9,11 +9,15 @@ body{
     font-variant-ligatures: normal;
     font-weight: normal;
 }
+a{
+    text-decoration: none;
+}
 
 #iconWrapper{
     font-size: x-large;
     font-weight: 800;
     width: max-content;
+    min-width: 250px;
     display: inline-block;
     height: max-content;
     background-color: white;
@@ -51,20 +55,25 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 250px;
-
 }
 
 .header button{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    background-color: white;
     padding: 10px;
     border-radius: 50vw;
     border: none;
-    width: min-content;
-    background-color: white;
     color: gray;
 }
 
-.header button:first-child:hover{
+.header button:nth-child(odd){
+    border: 1px solid gray;
+    width: max-content;
+}
+
+.header button:nth-child(odd):hover{
     background-color: #e3e4e7;
 }
 
