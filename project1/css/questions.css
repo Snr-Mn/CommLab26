@@ -10,6 +10,49 @@ body{
     font-weight: normal;
 }
 
+h2{
+    margin-bottom: 10px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.hidden {
+    color: white;
+}
+
+a button:hover{
+    background-color: #e3e4e7;
+}
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#questShare{
+    display: flex;
+    flex-direction: row;
+}
+
+#profile{
+    background-color: #ecf5fd;
+    border-radius: 10px;
+    border: 5px;
+    padding: 10px;
+}
+
+
+.comments{
+    border-top: 1px solid #d5d9dc;
+}
+
+
+.questParag{
+    padding-top: 10px;
+}
+
 
 #iconWrapper{
     font-size: x-large;
@@ -53,19 +96,17 @@ body{
     width: 250px;
 
 }
-
 .header button{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    background-color: white;
     padding: 10px;
     border-radius: 50vw;
     border: none;
-    background-color: white;
     color: gray;
 }
 
-.header button:hover{
-    background-color: #e3e4e7;
-}
 
 .sideBarLeft{
     border-right: 1px solid #d5d9dc;
@@ -114,7 +155,9 @@ body{
 .mainPage{
     padding: 10px;
     padding-left: 170px;
-    width: 100%;
+    width: 70%;
+    letter-spacing: 0px;
+    line-height: 30px;
 }
 
 

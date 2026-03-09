@@ -13,6 +13,10 @@ a{
     text-decoration: none;
 }
 
+a button:hover{
+    background-color: #e3e4e7;
+}
+
 #iconWrapper{
     font-size: x-large;
     font-weight: 800;
@@ -66,15 +70,6 @@ a{
     border-radius: 50vw;
     border: none;
     color: gray;
-}
-
-.header button:nth-child(odd){
-    border: 1px solid gray;
-    width: max-content;
-}
-
-.header button:nth-child(odd):hover{
-    background-color: #e3e4e7;
 }
 
 .sideBarLeft{
