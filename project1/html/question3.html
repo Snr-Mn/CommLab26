@@ -13,25 +13,51 @@
     <div class="navbarWrapper">
 
         <div class="navbar">
-            <a href="../index.html">
-                <button href="../index.html" id="iconWrapper">
+            <a href="index.html">
+                <button id="iconWrapper">
                     <img src="../img/icon.png" width="32px" height="32px" />
                     Stack Overflow
                 </button>
             </a>
             <div class="header">
-                <button disabled>
-                    About
-                </button>
-                <button disabled>
-                    Productions
-                </button>
-                <button disabled>
-                    For Assistants
-                </button>
+                <div class="navButtons">
+
+                    <a>
+                        <button type="button">
+                            AI assistance
+                        </button>
+                    </a>
+                    <a>
+
+                        <button type="button">
+                            About
+                        </button>
+                    </a>
+                    <a>
+
+                        <button disabled>
+                            Productions
+                        </button>
+                    </a>
+
+
+                </div>
+                <div class="searchBar">
+                    <button>
+                        <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18"
+                            height="18" viewBox="0 0 18 18">
+                            <path
+                                d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0">
+                            </path>
+                        </svg>
+                    </button>
+                    <span id="gray">
+                        Search...
+                    </span>
+
+                </div>
             </div>
         </div>
-
     </div>
     <div class="contentPage">
         <div class="sideBarLeft">
@@ -40,7 +66,11 @@
                     <svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18">
                         <path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9zm-8 1v6h4v-6z"></path>
                     </svg>
-                    <p>Home</p>
+                    <a href="../index.html">
+
+
+                        <p>Home</p>
+                    </a>
                 </button>
                 <button>
                     <svg aria-hidden="true" class="svg-icon iconQuestion" width="18" height="18" viewBox="0 0 18 18">
@@ -73,38 +103,47 @@
             </div>
             </br>
             <button>
-                <svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18">
-                    <path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9zm-8 1v6h4v-6z"></path>
+                <svg aria-hidden="true" class="svg-icon iconPeak" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M10.5 3.5 8 7.25l2 2.25L8.5 11l-3-3.5L1 14h16z"></path>
                 </svg>
-                <p>Home</p>
+                <p>Challenges</p>
             </button>
             <button>
-                <svg aria-hidden="true" class="svg-icon iconQuestion" width="18" height="18" viewBox="0 0 18 18">
+                <svg aria-hidden="true" class="fc-white bg-transparent  svg-icon iconChatTest" width="18" height="18"
+                    viewBox="0 0 18 16">
                     <path
-                        d="m4 15-3 3V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v9c0 1.09-.91 2-2 2zm7.75-3.97c.72-.83.98-1.86.98-2.94 0-1.65-.7-3.22-2.3-3.83a4.4 4.4 0 0 0-3.02 0 3.8 3.8 0 0 0-2.32 3.83q0 1.93 1.03 3a3.8 3.8 0 0 0 2.85 1.07q.94 0 1.71-.34.97.66 1.06.7.34.2.7.3l.59-1.13a5 5 0 0 1-1.28-.66m-1.27-.9a5 5 0 0 0-1.5-.8l-.45.9q.5.18.98.5-.3.1-.65.11-.92 0-1.52-.68c-.86-1-.86-3.12 0-4.11.8-.9 2.35-.9 3.15 0 .9 1.01.86 3.03-.01 4.08">
+                        d="M17 3C17 1.89543 16.1046 1 15 1H7C5.89543 1 5 1.89543 5 3V5C5 6.10457 5.89543 7 7 7H15C16.1046 7 17 6.10457 17 5V3ZM7 3H15V5H7V3Z">
+                    </path>
+                    <path
+                        d="M17 10C17 8.89543 16.1046 8 15 8H7C5.89543 8 5 8.89543 5 10V14C5 15.1046 5.89543 16 7 16H15C16.1046 16 17 15.1046 17 14V10ZM7 10H15V14H7V10Z">
+                    </path>
+                    <path
+                        d="M1 9C1 8.44771 1.44772 8 2 8H3C3.55228 8 4 8.44772 4 9V10C4 10.5523 3.55228 11 3 11H2C1.44772 11 1 10.5523 1 10V9Z">
+                    </path>
+                    <path
+                        d="M2 1C1.44772 1 1 1.44772 1 2V3C1 3.55228 1.44772 4 2 4H3C3.55228 4 4 3.55228 4 3V2C4 1.44772 3.55228 1 3 1H2Z">
                     </path>
                 </svg>
-                <p>Questions</p>
+                <p>Chat</p>
             </button>
             <button>
-                <svg aria-hidden="true" class="fc-white bg-transparent h18 w18 svg-icon iconAnswerAI" width="18"
-                    height="18" viewBox="0 0 18 18">
+                <svg aria-hidden="true" class="svg-icon iconDocumentAlt" width="18" height="18" viewBox="0 0 18 18">
                     <path
-                        d="M15 1a2 2 0 0 1 2 2v14l-3-3H3c-1.09 0-2-.91-2-2V3c0-1.09.91-2 2-2zM8.2 4.13a.2.2 0 0 0-.37 0l-.57 1.31a3.5 3.5 0 0 1-1.82 1.82l-1.3.57a.2.2 0 0 0 0 .36l1.3.57c.82.35 1.47 1 1.82 1.82l.57 1.3c.07.17.3.17.36 0l.57-1.3a3.5 3.5 0 0 1 1.82-1.82l1.3-.57a.2.2 0 0 0 0-.36l-1.3-.57a3.5 3.5 0 0 1-1.82-1.82zm4.9-1.07a.1.1 0 0 0-.2 0l-.28.66c-.17.4-.5.73-.9.9l-.66.29a.1.1 0 0 0 0 .18l.66.29c.4.17.73.5.9.9l.29.66a.1.1 0 0 0 .18 0l.29-.66c.17-.4.5-.73.9-.9l.66-.29a.1.1 0 0 0 0-.18l-.66-.29c-.4-.17-.73-.5-.9-.9z">
+                        d="M5 3a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm2 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m.5 1.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1M5 14.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5">
                     </path>
-                </svg>
-                <p>Human Assist</p>
-            </button>
-            <button>
-                <svg aria-hidden="true" class="svg-icon iconTags" width="18" height="18" viewBox="0 0 18 18">
                     <path
-                        d="M9.24 1a3 3 0 0 0-2.12.88l-5.7 5.7a2 2 0 0 0-.38 2.31 3 3 0 0 1 .67-1.01l6-6A3 3 0 0 1 9.83 2H14a3 3 0 0 1 .79.1A2 2 0 0 0 13 1z"
+                        d="M5.9 2h6.35A2.75 2.75 0 0 1 15 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1"
                         opacity=".4"></path>
+                </svg>
+                <p>Article</p>
+            </button>
+            <button>
+                <svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18">
                     <path
-                        d="M9.83 3a2 2 0 0 0-1.42.59l-6 6a2 2 0 0 0 0 2.82L6.6 16.6a2 2 0 0 0 2.82 0l6-6A2 2 0 0 0 16 9.17V5a2 2 0 0 0-2-2zM12 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4">
+                        d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3s1.37-3 2.5-3 2.44.58 2.5 3-.16 2.38-1 3c-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3s1.37-3 2.5-3 2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4">
                     </path>
                 </svg>
-                <p>Tags</p>
+                <p>Users</p>
             </button>
         </div>
         <div class="mainPage">
@@ -118,7 +157,7 @@
                     <span style="color: gray;">Asked</span> years ago
                 </p>
                 <p>
-                    <span style="color: gray;">Modfied</span> today 12:45
+                    <span style="color: gray;">Modified</span> January 2 12:45
                 </p>
                 <p>
                     <span style="color: gray;">Viewed</span> 927 times
@@ -143,7 +182,8 @@
                 </div>
                 <div class="questParag">
 
-                    I see a lot of tutorials using Flexbox, but I don’t fully understand what display: flex changes
+                    I see a lot of tutorials using Flexbox, but I don’t fully understand what <span
+                        class="codeText"><code>display: flex</code></span> changes
                     about the layout. What does it do and why is it useful?
                     <!-- <div class="codeArea">
                         <pre>
@@ -170,19 +210,19 @@ you stop the exception from causing
                         </div>
 
                         <div class="userCard">
-                            <div class="askTime">asked Feb 26 at 9:47</div>
+                            <div class="askTime">January 23 at 19:47</div>
 
                             <div class="userRow">
-                                <img src="../img/profile1.png" class="avatar">
+                                <img src="../img/profile3.png" class="avatar">
 
                                 <div class="userInfo">
-                                    <div id="blue" class="name">Vladimir Fisher</div>
+                                    <div id="blue" class="name">House MD</div>
 
                                     <div class="stats">
-                                        <span id="rep">2,538</span>
-                                        <span id="gold">● 3</span>
-                                        <span id="silver">● 21</span>
-                                        <span id="bronze">● 27</span>
+                                        <span id="rep">33</span>
+                                        <span id="gold">● 10</span>
+                                        <span id="silver">● 1</span>
+                                        <span id="bronze">● 47</span>
                                     </div>
                                 </div>
                             </div>
@@ -191,16 +231,15 @@ you stop the exception from causing
                     </div>
                     <div class="comments">
                         <p>
-                            Are you launching a particular website? I'd look for something in the code of that site, its
-                            not
-                            normal for a webview to flicker –
-                            <span id="blue">Gabe Sechan</span> <span id="gray">Feb 26 at 15:04</span>
+                            There are no stupid questions, only useless answers. –
+                            <span id="blue">RandomQuoteMan</span> <span id="gray">January 31 at 21:10</span>
                         </p>
                         <p>
-                            There are a lot of JavaScript Code - <span id="blue">Vladimir Fisher</span><span id="gray">
-                                Feb
-                                27 at
-                                16:17</span>
+                            Stop making useless comments RandomQuoteMan - <span id="blue">flexuser#21</span><span
+                                id="gray">
+                                February
+                                1 at
+                                09:23</span>
                         </p>
                         <span id="gray">Add a comment</span>
                     </div>
@@ -228,7 +267,7 @@ you stop the exception from causing
                         </svg>
                     </button>
                     <h3>
-                        234
+                        395
                     </h3>
                     <button class="button">
                         <svg aria-hidden="true" class="svg-icon iconArrowDown" width="18" height="18"
@@ -239,53 +278,39 @@ you stop the exception from causing
                 </div>
                 <div class="questParag">
 
-                    On a computer, text is just numbers, and those numbers are represented in binary. To translate
-                    binary into readable text, you need to convert the binary into numbers and then interpret those
-                    numbers using a character encoding, most commonly ASCII (or sometimes UTF-8).
+                    <span class="codeText"><code>display: flex</code></span> turns an element into a flex container,
+                    which lets you easily control how its child elements are arranged.
+                    </br>
+                    </br>
+                    By default, items are placed in a row and spaced next to each other.
+                    </br>
 
                     <h3>
-                        How the process works
+                        Example:
                     </h3>
-                    <ol>
-                        <li>
-                            Split the binary into groups (usually 8 bits / 1 byte).
-                            Each character is typically stored as one byte.
-                            </br>
-                            </br>
-                            Example:
+                    Split the binary into groups (usually 8 bits / 1 byte).
+                    Each character is typically stored as one byte.
+                    </br>
+                    </br>
+                    Example:
 
-                            <div class="codeArea">
-                                <pre><code>01001000 01100101 01101100 01101100 01101111</code></pre>
-                            </div>
-                        </li>
-                        <li>
-                            Convert each binary byte to a decimal number.
+                    <div class="codeArea">
+                        <pre><code>.container {
+    display: flex;
+}</code></pre>
+                    </div>
 
-                            <div class="codeArea">
-                                <pre><code>01001000 → 72
-01100101 → 101
-01101100 → 108
-01101100 → 108
-01101111 → 111</code></pre>
-                            </div>
-                        </li>
-                        <li>
-                            Map each number to a character using ASCII.
-                            <div class="codeArea">
-                                <pre><code>72  → H
-101 → e
-108 → l
-108 → l
-111 → o</code></pre>
-                            </div>
-                        </li>
-                        <li>
-                            Combine the characters to form the final string.
-                            <div class="codeArea">
-                                <pre><code>Hello</code></pre>
-                            </div>
-                        </li>
-                    </ol>
+                    <div class="codeArea">
+                        <pre><code>&lt;div class="container"&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                    This makes the items line up horizontally. You can then use properties like <span
+                        class="codeText"><code>justify-content</code></span> and
+                    <span class="codeText"><code>align-items</code></span> to control spacing and alignment.
 
                     <div class="questEnd">
                         <div id="questShare">
@@ -308,7 +333,7 @@ you stop the exception from causing
                                 <img src="../img/profile2.png" class="avatar">
 
                                 <div class="userInfoAnswer">
-                                    <div id="blue" class="name">Hardik Chaudhary</div>
+                                    <div id="blue" class="name">Magnolia Magnolia</div>
 
                                     <div class="stats">
                                         <span id="rep">1,226</span>
@@ -323,13 +348,21 @@ you stop the exception from causing
                     </div>
                     <div class="comments">
                         <p>
-                            Are you launching a particular website? I'd look for something in the code of that site, its
-                            not
-                            normal for a webview to flicker –
-                            <span id="blue">Gabe Sechan</span> <span id="gray">Feb 26 at 15:04</span>
+                            01011001 01100101 01110011 00101100 00100000 01110100 01101000 01100001 01110100 00100000
+                            01101001 01110011 00100000 01100011 01101111 01110010 01110010 01100101 01100011 01110100
+                            00101110 00100000 –
+                            <span id="blue">01000011 01101000 01100001 01110100 01000111 01010000 01010100
+                                00001010</span> <span id="gray">Feb 26 at 15:04</span>
                         </p>
                         <p>
-                            There are a lot of JavaScript Code - <span id="blue">Vladimir Fisher</span><span id="gray">
+                            01001001 00100000 01110100 01101111 01101111 00100000 01100001 01100111 01110010 01100101
+                            01100101 00101110 –
+                            <span id="blue">01000011 01101100 01100001 01110101 01100100 01100101</span> <span
+                                id="gray">Feb 26 at 15:05</span>
+                        </p>
+                        <p>
+                            Huh? Please use English as this question is in English. - <span
+                                id="blue">Moderator</span><span id="gray">
                                 Feb
                                 27 at
                                 16:17</span>
@@ -341,6 +374,49 @@ you stop the exception from causing
 
                 </div>
             </div>
+        </div>
+        <div class="sideBarRight">
+
+            <div class="blogBox">
+                <b>The Overflow Blog</b>
+                <ul>
+                    <li>Please mak sure to use only human language when creating posts!</li>
+                </ul>
+
+                <b>Featured on Stack Overflow</b>
+                <ul>
+                    <li>Logo updates to Stack Overflow's visual identity</li>
+                    <li>Policy: Generative AI (e.g., ChatGPT) is discouraged</li>
+                    <li>I’m Jody, the Chief Quality & Post Inspect...</li>
+                    <li>Release notes and bug fixes for Stack Ov...</li>
+                </ul>
+            </div>
+
+            <div class="facts">
+
+                <h3>Hot Programmer Facts</h3>
+
+                <ul class="hotList">
+                    <li>There are only two hard things in Computer Science: cache invalidation, naming things, and
+                        off-by-one errors.</li>
+                    <li>Programming is 10% writing code and 90% wondering why it doesn’t work.</li>
+                    <li>The first computer bug was literally a moth stuck in a computer.</li>
+                    <li>Most developers spend more time Googling than typing.</li>
+                    <li>“Temporary fix” is the most permanent solution in programming.</li>
+                    <li>Semicolons are optional in some languages, but bugs are not.</li>
+                    <li>There are 10 types of people: those who understand binary and those who don’t.</li>
+                    <li>If debugging is removing bugs, programming must be putting them in.</li>
+                    <li>Code that works is code you should never touch again.</li>
+                    <li>Any code written after 2 AM becomes legacy code immediately.</li>
+                    <li>Stack Overflow has probably saved billions of developer hours.</li>
+                    <li>Comments are often more confusing than the code.</li>
+                    <li>The best code is the code you don’t have to write.</li>
+                    <li>Tabs vs spaces debates have lasted longer than some programming languages.</li>
+                    <li>One missing bracket can ruin your entire day.</li>
+                </ul>
+
+            </div>
+
         </div>
 
     </div>

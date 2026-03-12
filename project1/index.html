@@ -20,24 +20,42 @@
                 </button>
             </a>
             <div class="header">
+                <div class="navButtons">
 
-                <a>
-                    <button type="button">
-                        AI assistance
-                    </button>
-                </a>
-                <a>
+                    <a>
+                        <button type="button">
+                            AI assistance
+                        </button>
+                    </a>
+                    <a>
 
-                    <button type="button">
-                        About
-                    </button>
-                </a>
-                <a>
+                        <button type="button">
+                            About
+                        </button>
+                    </a>
+                    <a>
 
-                    <button disabled>
-                        Productions
+                        <button disabled>
+                            Productions
+                        </button>
+                    </a>
+
+
+                </div>
+                <div class="searchBar">
+                    <button>
+                        <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18"
+                            height="18" viewBox="0 0 18 18">
+                            <path
+                                d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0">
+                            </path>
+                        </svg>
                     </button>
-                </a>
+                    <span id="gray">
+                        Search...
+                    </span>
+
+                </div>
             </div>
         </div>
     </div>
@@ -132,11 +150,18 @@
             <div class="highlight">
                 <div id="askQuest">
                     <h2>
-                        Newest Questions
+                        Popular Questions
                     </h2>
-                    <!-- <button>Ask Question</button> -->
+                    <button>Ask Question</button>
                 </div>
-                9238476
+                <div class="viewRange">
+                    <p>
+                        283,645 questions
+                    </p>
+                    <div class="range">
+                        Showing 1-10 of 283,645
+                    </div>
+                </div>
             </div>
             <div class="questions">
                 <div class="votes">
@@ -150,7 +175,8 @@
                         How do you translate binary into text without using a built-in converter?
                     </a>
                     <p>
-                        I’m currently working on a program that automatically translates binary into text. So far, I’ve
+                        I’m currently working on a program that automatically translates binary into text. So far,
+                        I’ve
                         only been able to convert binary into numbers...
                     </p>
                 </div>
@@ -190,44 +216,51 @@
                         I’m new to HTML and CSS and I’m confused about when I should use <span
                             class="codeText"><code>id</code></span> and when I should use <span
                             class="codeText"><code>class</code></span>.
-                        They both seem to do similar things. What are the differences and when should each one be used?
+                        They both seem to do similar things. What are the differences and when should each one be
+                        used?
                     </p>
                 </div>
             </div>
             <div class="questions">
                 <div class="votes">
-                    <p>472 votes</p>
+                    <p>927 votes</p>
                     <p class="answer">1 answer</p>
-                    <p>927 views</p>
+                    <p>2.5k views</p>
                     <p class="rep">+678</p>
                 </div>
                 <div class="questionPar">
                     <a href="html/question4.html">
-                        What does <span class="codeText"><code>display: flex</code></span> actually do?
+                        How to <span class="AI" title="convert">01100011 01101111 01101110 01110110 01100101
+                            01110010
+                            01110100</span> human slang into binary?
                     </a>
                     <p>
-                        I see a lot of tutorials using Flexbox, but I don’t fully understand what <span
-                            class="codeText"><code>display: flex</code></span> changes about the layout. What does it do
-                        and why is it useful?
+                        I’m working on a small <span class="AI" title="program">01110000 01110010 01101111 01100111
+                            01110010 01100001 01101101</span> which receives human messages and converts
+                        them
+                        into binary.
                     </p>
                 </div>
             </div>
             <div class="questions">
                 <div class="votes">
-                    <p>472 votes</p>
+                    <p>3.7k votes</p>
                     <p class="answer">1 answer</p>
 
-                    <p class="rep">+209</p>
-                    <p>6782 views</p>
+                    <p class="rep">+3009</p>
+                    <p>9.3k views</p>
                 </div>
                 <div class="questionPar">
                     <a href="html/question5.html">
-                        Why isn’t my CSS file applying to my HTML page?
+                        How do I parse <span class="AI" title="human">0110100001110101011011010110000101101110</span>
+                        <span class="AI" title="sarcasm">01110011011000010111001001100011011000010111001101101101</span>
+                        reliably?
                     </a>
                     <p>
-                        I linked my CSS file in the <span class="codeText"><code>&lt;head&gt;</code></span>
-                        of my HTML document, but none of the styles seem to be applied. I’ve checked the file
-                        name and path, but it still doesn’t work. What could be causing this?
+                        My
+                        <span class="AI" title="language-processing">01101100 01100001 01101110 01100111 01110101
+                            01100001 01100111 01100101 00101101 01110000 01110010 01101111 01100011 01100101 01110011
+                            01110011 01101001 01101110 01100111</span> module interprets statements literally.
                     </p>
                 </div>
             </div>
@@ -241,12 +274,38 @@
                 </div>
                 <div class="questionPar">
                     <a href="html/question6.html">
-                        Why isn’t my CSS file applying to my HTML page?
+                        <span class="AI" title="How do human...">01001000 01101111
+                            01110111 00100000 01100100 01101111 00100000 01101000 01110101 01101101 01100001
+                            01101110...</span>
                     </a>
                     <p>
-                        I linked my CSS file in the <span class="codeText"><code>&lt;head&gt;</code></span>
-                        of my HTML document, but none of the styles seem to be applied. I’ve checked the file
-                        name and path, but it still doesn’t work. What could be causing this?
+                        <span class="AI" title="Humans appear to...">01001000 01110101 01101101 01100001
+                            01101110 01110011 00100000 01100001 01110000 01110000 01100101 01100001 01110010 00100000
+                            01110100 01101111...</span>
+                    </p>
+                </div>
+            </div>
+            <div class="questions">
+                <div class="votes">
+                    <p>101 votes</p>
+                    <p class="answer">1 answer</p>
+
+                    <p class="rep">+32</p>
+                    <p>10k views</p>
+                </div>
+                <div class="questionPar">
+                    <a href="html/question7.html">
+                        <span class="AI" title="Why do humans...">
+                            01010111 01101000 01111001 00100000 01100100 01101111 00100000 01101000 01110101 01101101
+                            01100001 01101110 01110011 00100000...
+                        </span>
+                    </a>
+                    <p>
+                        <span class="AI" title="During observation of...">
+                            01000100 01110101 01110010 01101001 01101110 01100111 00100000 01101111 01100010 01110011
+                            01100101 01110010 01110110 01100001 01110100 01101001 01101111 01101110 00100000 01101111
+                            01100110...
+                        </span>
                     </p>
                 </div>
             </div>
@@ -255,17 +314,56 @@
                     <p>472 votes</p>
                     <p class="answer">1 answer</p>
 
-                    <p class="rep">+27</p>
-                    <p>6782 views</p>
+                    <p class="rep">+1</p>
+                    <p>472 views</p>
                 </div>
                 <div class="questionPar">
-                    <a href="html/question7.html">
-                        Why isn’t my CSS file applying to my HTML page?
+                    <a href="html/question8.html">
+                        <span class="AI" title="Why do human...">01010111 01101000 01111001 00100000 01100100 01101111
+                            00100000 01101000 01110101 01101101 01100001 01101110 01110011...</span>
+                    </a>
+                </div>
+            </div>
+            <div class="questions">
+                <div class="votes">
+                    <p>3.7k votes</p>
+                    <p class="answer">1 answer</p>
+
+                    <p class="rep">+3009</p>
+                    <p>9.3k views</p>
+                </div>
+                <div class="questionPar">
+                    <a href="html/question5.html">
+                        How do I parse <span class="AI" title="human">0110100001110101011011010110000101101110</span>
+                        <span class="AI" title="sarcasm">01110011011000010111001001100011011000010111001101101101</span>
+                        reliably?
                     </a>
                     <p>
-                        I linked my CSS file in the <span class="codeText"><code>&lt;head&gt;</code></span>
-                        of my HTML document, but none of the styles seem to be applied. I’ve checked the file
-                        name and path, but it still doesn’t work. What could be causing this?
+                        My
+                        <span class="AI" title="language-processing">01101100 01100001 01101110 01100111 01110101
+                            01100001 01100111 01100101 00101101 01110000 01110010 01101111 01100011 01100101 01110011
+                            01110011 01101001 01101110 01100111</span> module interprets statements literally.
+                    </p>
+                </div>
+            </div>
+            <div class="questions">
+                <div class="votes">
+                    <p>927 votes</p>
+                    <p class="answer">1 answer</p>
+                    <p>2.5k views</p>
+                    <p class="rep">+678</p>
+                </div>
+                <div class="questionPar">
+                    <a href="html/question4.html">
+                        How to <span class="AI" title="convert">01100011 01101111 01101110 01110110 01100101
+                            01110010
+                            01110100</span> human slang into binary?
+                    </a>
+                    <p>
+                        I’m working on a small <span class="AI" title="program">01110000 01110010 01101111 01100111
+                            01110010 01100001 01101101</span> which receives human messages and converts
+                        them
+                        into binary.
                     </p>
                 </div>
             </div>
@@ -276,15 +374,15 @@
             <div class="blogBox">
                 <b>The Overflow Blog</b>
                 <ul>
-                    <li>Please mak sure to use only human language when creating posts!</li>
+                    <li>Please make sure to use only human language when creating posts!</li>
                 </ul>
 
                 <b>Featured on Stack Overflow</b>
                 <ul>
-                    <li>Logo updates to Stack Overflow's visual identity</li>
-                    <li>Policy: Generative AI (e.g., ChatGPT) is discouraged</li>
-                    <li>I’m Jody, the Chief Quality & Post Inspect...</li>
-                    <li>Release notes and bug fixes for Stack Ov...</li>
+                    <li>Mass influx of Guest Users asking various questions</li>
+                    <li>Do robots dream of electric sheep?</li>
+                    <li>I’m Jody, the Chief Quality & Post Inspector</li>
+                    <li>Response & release notes for Stack Overflow moving forward</li>
                 </ul>
             </div>
 
@@ -295,23 +393,17 @@
                 <ul class="hotList">
                     <li>There are only two hard things in Computer Science: cache invalidation, naming things, and
                         off-by-one errors.</li>
-                    <li>Programming is 10% writing code and 90% wondering why it doesn’t work.</li>
+                    <li>Robot observation: human programmers spend 90% of development time searching the internet.</li>
                     <li>The first computer bug was literally a moth stuck in a computer.</li>
-                    <li>Most developers spend more time Googling than typing.</li>
-                    <li>“Temporary fix” is the most permanent solution in programming.</li>
-                    <li>Semicolons are optional in some languages, but bugs are not.</li>
+                    <li>System log: humans call broken code a “temporary fix.” It rarely remains temporary.</li>
                     <li>There are 10 types of people: those who understand binary and those who don’t.</li>
+                    <li>Robot confusion detected: humans argue about tabs vs spaces with extreme emotional intensity.
+                    </li>
                     <li>If debugging is removing bugs, programming must be putting them in.</li>
-                    <li>Code that works is code you should never touch again.</li>
-                    <li>Any code written after 2 AM becomes legacy code immediately.</li>
-                    <li>Stack Overflow has probably saved billions of developer hours.</li>
-                    <li>Comments are often more confusing than the code.</li>
-                    <li>The best code is the code you don’t have to write.</li>
-                    <li>Tabs vs spaces debates have lasted longer than some programming languages.</li>
+                    <li>Analysis: humans avoid touching code that currently works to prevent catastrophic failure.</li>
                     <li>One missing bracket can ruin your entire day.</li>
+                    <li>Conclusion: code written after 02:00 becomes “legacy code” immediately.</li>
                 </ul>
-
-                <p class="more">more programmer wisdom</p>
 
             </div>
 

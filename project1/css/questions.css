@@ -192,12 +192,12 @@ a button:hover{
 }
 
 .header{
-    padding-left: 5px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 250px;
-
+    width: 100%;
 }
+
 .header button{
     display: flex;
     flex-direction: row;
@@ -277,6 +277,11 @@ a button:hover{
 #askQuest h2{
     font-weight: normal;
 }
+.AI{
+    cursor: help;
+    border-bottom: 1px dotted black;
+    overflow-wrap: break-word;
+}
 
 .questInfo{
     display: flex;
@@ -341,4 +346,66 @@ a button:hover{
     border: none;
     padding: 2px;
     
+}
+
+.hotList{
+    color: #1c75ce;
+
+}
+
+.hotList li{
+    margin-bottom: 10px;
+}
+
+.sideBarRight{
+    margin-top: 30px;
+    margin-left: 20px;
+    width:350px;
+    font-size: small;
+}
+
+.blogBox{
+    background:#fff8dc;
+    border:1px solid #f1b600;
+    border-radius:8px;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.blogBox ul{
+    padding-left:20px;
+    font-size: small;
+}
+
+.blogBox li{
+    margin:6px;
+}
+
+
+.navButtons{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: min-content;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.searchBar button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.searchBar svg{
+    fill: #555;
 }

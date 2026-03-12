@@ -40,6 +40,7 @@ a button:hover{
     position: fixed;
     top:0px;
     width: 100%;
+    height: min-content;
     border-top: 3px solid #129AED;
     background-color: white;
 }   
@@ -54,11 +55,13 @@ a button:hover{
 }
 
 .header{
-    padding-left: 5px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    width: 250px;
+    width: 100%;
+}
+#gray{
+    color: #9aa0a6;
 }
 
 .header button{
@@ -115,6 +118,7 @@ a button:hover{
 .mainPage{
     padding-left: 150px;
     padding-right: 24px;
+    min-width: min-content;
     width: fit-content;
 }
 
@@ -139,7 +143,8 @@ a button:hover{
 #askQuest button{
  background-color: #1c75ce;
  color: white;
- margin: 20px;
+ margin-top: 20px;
+ margin-bottom: 20px;
  border: none;
  border-radius: 5px;
  padding: 10px;
@@ -182,7 +187,7 @@ a button:hover{
 }
 .sideBarRight{
     margin-top: 30px;
-    width:350px;
+    min-width:min-content;
     font-size: small;
 }
 
@@ -249,4 +254,56 @@ a button:hover{
 
 .hotList li{
     margin-bottom: 10px;
+}
+
+.viewRange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range{
+    border: 1px solid #9aa0a6;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    /* padding-left: 20px; */
+    min-width: fit-content;
+    width: 30%;
+    font-size: small;
+    text-align: left;
+}
+
+.viewRange p{
+    margin: 0;
+    text-align: left;
+}
+
+.navButtons{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: min-content;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.searchBar button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.searchBar svg{
+    fill: #555;
 }
