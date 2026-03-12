@@ -9,7 +9,13 @@ body{
     font-variant-ligatures: normal;
     font-weight: normal;
 }
-
+pre{
+    margin: 0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
 h2{
     margin-bottom: 10px;
 }
@@ -26,26 +32,122 @@ a{
 a button:hover{
     background-color: #e3e4e7;
 }
-.userInfo{
+.questEnd{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
+
 #questShare{
     display: flex;
     flex-direction: row;
+    font-size: small;
+    justify-content: space-between;
+    width: 250px;
+    color: gray;
 }
 
-#profile{
-    background-color: #ecf5fd;
-    border-radius: 10px;
-    border: 5px;
-    padding: 10px;
+.userCard{
+    background:#ecf5fd;
+    width:fit-content;
+    border-radius:8px;
+    padding:10px;
+    font-size: small;
 }
 
+
+.userCardAnswer{
+    width:fit-content;
+    /* border-radius:8px; */
+    padding:10px;
+    font-size: small;
+}
+
+.askTime{
+    color:#5b6b73;
+    width: 100%;
+}
+
+.userRow{
+    display:flex;
+    align-items:flex-start;
+}
+
+.avatar{
+    width:32px;
+    height:32px;
+    border-radius:4px;
+    margin-right:8px;
+}
+
+.userInfo{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    font-size: small;
+}
+
+.name{
+    font-size:14px;
+    height: 16px;
+}
+
+.stats{
+    display:flex;
+    gap:8px;
+    font-size:14px;
+    color:#444;
+}
+
+#gold{ color:#f2b600; }
+#blue{ color: #2b6cb0; }
+#gray{ color:#9aa0a6; }
+#bronze{ color:#c58b5c; }
+#rep{font-weight:bold;}
 
 .comments{
     border-top: 1px solid #d5d9dc;
+    font-size: small;
+
+}
+
+.answers{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sortBy{
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+    width: 50%;
+    align-items: center;
+    font-size: small;
+}
+.sortBy span{
+    width: max-content;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+
+.highestScoreBox{
+    border: 1px solid #9aa0a6;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 100%;
+    font-size: small;
+}
+
+.comments p {
+    margin:0;
+    margin-bottom: 5px;
+    padding-left: 35px;
+    border-bottom: 1px solid #d5d9dc;
 }
 
 
@@ -223,9 +325,20 @@ a button:hover{
 }
 
 .codeArea{
-    padding: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #f6f6f6;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+
+.codeText{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: none;
+    padding: 2px;
+    
 }

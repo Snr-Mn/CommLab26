@@ -165,7 +165,9 @@ a button:hover{
     padding-left: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    font-size: small;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .votes p{
@@ -173,36 +175,78 @@ a button:hover{
     margin-bottom: 10px;
     text-align: end;
     width: max-content;
-    color: gray;
+    /* color: gray; */
 }
 .votes p:first-child{
     color: black;
 }
-
 .sideBarRight{
-    padding-top: 25px;
-    width: 15%;
+    margin-top: 30px;
+    width:350px;
+    font-size: small;
 }
 
-.collectives{
-    border: 1.5px solid #f5d27b;
-    background-color: #fdf7e7;
-    border-radius: 5px;
-    width: max-content;
-    padding: 16px;
+.blogBox{
+    background:#fff8dc;
+    border:1px solid #f1b600;
+    border-radius:8px;
+    padding:10px;
+    margin-bottom:20px;
 }
 
+.blogBox ul{
+    padding-left:20px;
+    font-size: small;
+}
+
+.blogBox li{
+    margin:6px;
+}
+
+.questionPar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
 .questionPar a{
     margin: 0;
+    font-size: large;
     text-decoration: none;
     color: #155ca3;
 }
 
 .questionPar p{
     margin: 0;
-    margin-top: 5px;
     font-size: 14px;
+    margin-top: 15px;
 }
 
-/* ---------------------------------------------------------- */
+.codeText{
+    background-color: #f2f2f3;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+}
 
+.answer{
+    color: #18864a;
+    border: 1px solid #18864a;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.rep{
+    color: white;
+    background-color: #155ca3;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.hotList{
+    color: #1c75ce;
+
+}
+
+.hotList li{
+    margin-bottom: 10px;
+}
