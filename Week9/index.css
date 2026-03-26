@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: #101010;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.skipAd{
+    height: 50px;
+    width: 100px;
+    background-color: whitesmoke;
+    position: fixed;
+    right: 100px;
+    bottom: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10%;
+    font-size: larger;
+}
+
+.skipAd:hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+
+.tabScreen{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+}
+.moreAds{
+    width: 100px;
+    height: 100px;
+
+    background-color: blue;
+
+}

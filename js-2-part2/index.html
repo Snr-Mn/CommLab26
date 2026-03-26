@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button onclick="moveBox()">move box</button>
+    <p>see the css and js file. here we move the box by toggling a class</p>
+    <p>also, open the Elements tab in the dev tools to see the classname toggle</p>
+    <div id="box1" class="box moveRight"></div>
+
+    <br><br>
+    <p>this button creates another button and puts it onto the page.</p>
+    <p>in js we also BIND another function to that new button. can you see what it does?</p>
+    <div class="buttonContainer">
+        <button onclick="addButton()">multiply</button>
+    </div>
+
+    <br><br>
+    <button onclick="turnOneButtonRed()">turn button red</button>
+    <button onclick="turnAllButtonsRed()">turn ALL buttons red</button>
+
+
+
+    <!-- <button onclick="removeAll()">quit this game</button>
+        <button onclick="moveContainer()">move it</button> -->
+
+</body>
+
+</html>
