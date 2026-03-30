@@ -36,10 +36,10 @@ img{
     height: 100vh;
     /* background-color: red; */
 }
+
 .moreAds{
-    width: 100px;
-    height: 100px;
-
-    background-color: blue;
-
+    min-width: 150px;
+    min-height: 200px;
+    border-radius: 10px;
+    border: #101010 2px solid;
 }
