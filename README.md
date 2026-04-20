@@ -16,7 +16,7 @@ We created [excel art](https://docs.google.com/spreadsheets/d/1J_VmYGMFZtr5OcLAR
 This project was interesting. using excel spreadsheet to create art was very new, and I would like to think I made it look great, but it is definitely lacking in many aspects.
 
 ---
-## [Shanzhai Mid Term Project](project1) - StackOverflow 
+## [Shanzhai Mid Term Project](shanzhaiProject) - StackOverflow 
 ### **For Public Readers.**
 **Project Title:** BitOverflow
 

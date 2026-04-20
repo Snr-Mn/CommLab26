@@ -12,20 +12,19 @@ let adSpace = document.querySelector('.tabScreen');
 
 function spawnAd() {
     document.querySelector(".skipAd").innerHTML = "<b>MORE ADS</b>";
-    const newAd = document.createElement('button');
+    const newAd = document.createElement('div');
     newAd.className = 'moreAds';
     newAd.style.position = 'absolute';
-    newAd.style.left = Math.random() * 90 + '%';
-    newAd.style.top = Math.random() * 90 + '%';
+    newAd.style.left = Math.random() * 80 + '%';
+    newAd.style.top = Math.random() * 80 + '%';
 
-    newAd.style.width = Math.random() * 300 + 'px';
-    newAd.style.height = Math.random() * 100 + 'px';
+    newAd.style.width = Math.random() * 20 + 'cm';
+    newAd.style.height = Math.random() * 10 + 'cm';
     newAd.style.backgroundColor = getRandomRGBColor();
 
 
     newAd.onclick = function () {
-        newAd.style.backgroundColor = 'transparent'
-        newAd.style.border = 'none'
+        newAd.remove();
     };
 
 

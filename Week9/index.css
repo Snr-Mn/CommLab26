@@ -43,3 +43,12 @@ img{
     border-radius: 10px;
     border: #101010 2px solid;
 }
+
+.xButton{
+    border-color: black;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: black;
+}
