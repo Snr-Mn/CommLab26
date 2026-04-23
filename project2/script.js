@@ -1,5 +1,6 @@
-let layers = document.querySelectorAll(".layer");
+let layers = document.querySelector(".layers");
 let rabbit = document.querySelector(".rabbit");
+let scale = 0.1;
 
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
@@ -7,27 +8,39 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px';
 });
 
+let layerNum = 1;
 
-
-function rabbitHover(eventInfo) {
-    console.log("event: ", eventInfo)
-
-    let posY = (Math.random() * 50) + 10 + "%"
-    let posX = (Math.random() * 10) + "px"
-
-    eventInfo.target.style.transform = `translate(${posX}, ${posY})`
+function scaleElm(element) {
+    let percentage = getScrollPercentage();
+    element.style.transform = `scale(${scale})`;
+    scale = 0.1 + (percentage);
 }
 
 
-function background(eventInfo) {
-    console.log(eventInfo);
+function getScrollPercentage() {
 
-    eventInfo.target.style.transform = `scale(${2})`
+    let scrolledAlready = window.scrollY;
+
+    let pageHeight = document.body.scrollHeight;
+
+
+    let windowHeight = window.innerHeight;
+
+
+    let possibleScrollSpace = pageHeight - windowHeight;
+
+
+    let percentage = (scrolledAlready / possibleScrollSpace);
+    return percentage;
 }
 
-function scrollSpeed(elm) {
-    elm.addEventListener("scroll", background);
-}
+window.addEventListener("scroll", function () {
+    let percentage = getScrollPercentage();
+    console.log(percentage);
+
+    scaleElm(layers);
 
 
-layers.forEach(scrollSpeed());
+});
+
+

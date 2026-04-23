@@ -1,0 +1,44 @@
+body{
+    margin:0;
+}
+
+.windowHeight{
+    outline: black dotted 4px;
+    background-color: beige;
+    
+    /* what should be the real size? */
+    height: 50vh;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialWrapper{
+    pointer-events: none;
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+.specialWrapper p{
+    pointer-events: all;
+    font-size: 30px;
+}
+
+.specialWrapper p span{
+    position: relative;
+    display: inline-block;
+    transition: transform 1s ease;
+}

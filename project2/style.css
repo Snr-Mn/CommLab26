@@ -3,37 +3,42 @@ body{
     cursor: none;
 }
 
-.html{
+.distance{
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.background{
-    position: absolute;
-    /* background-color: rgba(255, 153, 0); */
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-}
-
-.background:nth-child(n){
-    background-color: rgb(165, 42, 42, 0.5);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-   transition: transform linear 10s;
+    height: 200vh;
+    background-color: blue;
 }
 
 .foreground{
-    position: absolute;
-    background-color: rgba(4, 0, 255, 0.4);
+    position: fixed;
     text-align: center;
     width: 50%;
     height: 50%;
-    z-index: 10;
+}
+
+/* .layers{
+    position: relative;
+    height: 100%;
+} */
+
+.layers{
+    /* position: fixed;
+    top: 25%;
+    left: 27%; */
+    width: 100%;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+
+}
+.layers img{
+    width: 400px;
 }
 
 .rabbit{
@@ -42,13 +47,18 @@ body{
 }
 
 .cursor {
-    width: 30px;
-    height: 30px;
-    border: 2px solid black;
-    background-color: white;
-    border-radius: 50%;
     position: fixed;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
+
+/* #l1{
+    transform: scale(0.5);
+}
+#l2{
+    transform: scale(0.4);
+}
+#l3{
+    transform: scale(0.1);
+} */
