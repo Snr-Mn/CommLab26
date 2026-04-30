@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 5000vh;
-    background-color: blue;
+    background-color: black;
 }
 /* 
 .distance{
@@ -36,7 +36,7 @@ body{
     height: 100%;
     object-fit: cover;
     transform-origin: center center;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
 }
 
 .rabbit{

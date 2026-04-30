@@ -1,7 +1,7 @@
 body{
     height: 5000vh;
     margin:0;
-    background-color: blue;
+    background-color: black;
     cursor: none;
 
     overflow: none;
@@ -64,8 +64,10 @@ body{
 .hole {
   top: 50%;
   left: 50%;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 1px solid black
 
 }
 
@@ -73,7 +75,7 @@ body{
   position: fixed;
   pointer-events:none;
 
-  transform: translate(-30%, -10%) scale(2);
+  transform: translate(-5%, 20%) scale(2);
 
   z-index: 9999;
 }
@@ -82,4 +84,6 @@ body{
 .nextLocation{
   display: none;
   position: fixed;
+  top: 50vh;
+  left: 50%;
 }
