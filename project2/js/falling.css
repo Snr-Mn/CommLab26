@@ -1,0 +1,85 @@
+body{
+    height: 5000vh;
+    margin:0;
+    background-color: blue;
+    cursor: none;
+
+    overflow: none;
+
+}
+
+.orbit {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+  
+    transform: translate(-50%, -50%) scaleY(0.6);
+  }
+  
+@keyframes catIdle {
+    from {
+      transform: rotate(0deg) translateX(35vw) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(35vw) rotate(-360deg);
+    }
+}
+
+.cat {
+    width: 200px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    animation: catIdle 15s linear infinite alternate;
+    transition: opacity 0.8s ease-out;
+}
+
+.cat.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.catStand {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in 1s;
+    z-index: 100;
+}
+
+.catStand.show {
+    opacity: 1;
+}
+
+
+.hole {
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+
+}
+
+.cursor {
+  position: fixed;
+  pointer-events:none;
+
+  transform: translate(-30%, -10%) scale(2);
+
+  z-index: 9999;
+}
+
+
+.nextLocation{
+  display: none;
+  position: fixed;
+}

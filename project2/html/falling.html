@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Tree Falling</title>
+    <link rel="stylesheet" href="../js/falling.css">
+    <script src="../js/falling.js" defer></script>
 </head>
 
 <body>
@@ -19,23 +19,26 @@
             </path>
         </svg>
     </div>
-    <div class="foreground">
-        <div class="rabbit">
-            <img id="rabbitIMG" src="./img/rabbit.png" height="200px" />
+
+    <div class="orbit">
+        <div class="cat">
+            <img src="../img/cat.png" width="200px" height="320" />
         </div>
     </div>
 
-    <div class="treeWrapper">
-        <img id="door" src="./img/door.png" />
-        <img id="tree" src="./img/tree.jpg" />
+    <img class="catStand" src="../img/cat.png">
+
+
+    <div class="layerWrapper">
     </div>
 
-    <div class="layers">
-        <img class="layer" src="./img/hallway.jpeg" data-depth="0" />
-        <img class="layer" src="./img/hallway.jpeg" data-depth="0.015" />
-        <img class="layer" src="./img/hallway.jpeg" data-depth="0.05" />
-        <img class="layer" src="./img/hallway.jpeg" data-depth="0.1" />
-        <img class="layer" src="./img/hallway.jpeg" data-depth="0.3" />
+    <div class="nextLocation">
+        <div>
+
+            <img class="cake" src="../img/cake.png" height="100px" />
+            <button class="hole">HOLE</button>
+            <img class="water" src="../img/water.png" height="100px" />
+        </div>
     </div>
 
 </body>
