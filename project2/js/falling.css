@@ -1,20 +1,28 @@
 body{
     height: 5000vh;
     margin:0;
-    background-color: black;
     cursor: none;
+    overflow: none; 
+}
 
-    overflow: none;
-
+.background{
+  z-index: -1;
+  position: fixed;
+  top:0;
+  left:0;
 }
 
 .orbit {
     position: fixed;
     top: 50vh;
     left: 50vw;
+
+    display: flex;
+    flex-direction: row;
   
     transform: translate(-50%, -50%) scaleY(0.6);
-  }
+    z-index: 100;
+}
   
 @keyframes catIdle {
     from {
@@ -22,7 +30,32 @@ body{
     }
     to {
       transform: rotate(360deg) translateX(35vw) rotate(-360deg);
+
     }
+}
+
+.catSpeak {
+  position: relative;
+  transform: translate(0%, 100%);
+  animation: catIdle 15s linear infinite alternate;
+  pointer-events: none;
+}
+
+.speechBubble {
+  transform: translate(-100px, -100px);
+  pointer-events: none;
+}
+
+.catText {
+  position: absolute;
+  top: -60px;
+  left: -75px;
+  width: 200px;
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
 }
 
 .cat {
@@ -34,56 +67,123 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
     animation: catIdle 15s linear infinite alternate;
-    transition: opacity 0.8s ease-out;
+    transition: opacity 0.8s ease-in-out;
+
 }
 
-.cat.fade-out {
+
+.fallingObject {
+  position: fixed;
+  top: 50vh;
+  pointer-events: none;
+  opacity: 0;
+  font-size: 32px;
+  transform: translate(-50%, -50%) scale(0.1);
+}
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  transform-origin: top left;
+  transform: scale(2);
+  z-index: 9999;
+}
+
+.nextLocation {
+  position: fixed;
+  top: 80vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 400px;
+  height: 200px;
+}
+
+
+
+.table {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150vh);
+  transition: opacity 0.4s ease-out 0s, transform 0.4s ease-out 0s;
+}
+
+.cake {
+  position: absolute;
+  bottom: 60px;
+  left: 25%;
+  transform: translateX(-40%) translateY(-200vh);
+  transition: opacity 0.4s ease-out 0.3s, transform 0.4s ease-out 0.3s;
+}
+
+.water {
+  position: absolute;
+  bottom: 60px;
+  left: 70%;
+  transform: translateX(-50%) translateY(-150vh);
+
+  transition: opacity 0.4s ease-out 0.6s, transform 0.4s ease-out 0.6s;
+}
+
+.hole {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150vh);
+  transition: opacity 0.4s ease-out 0.9s, transform 0.4s ease-out 0.9s;
+}
+
+.circleLayer {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;      
+  width: 40px;             
+  height: 40px;
+  pointer-events: none;
+  transition: none;        
+}
+
+.catStandWrapper {
+    position: fixed;
+    top: 30vh;
+    left: 30vh;
+    z-index: 100;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 1s ease-in-out 1s;
 }
 
 .catStand {
-    position: fixed;
-    top: 30%;
-    left: 30%;
+    cursor: pointer;
     transform: translate(-50%, -50%);
 
     width: 250px;
 
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1s ease-in 1s;
-    z-index: 100;
-}
-
-.catStand.show {
     opacity: 1;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out 1s;
+    z-index: 1000;
 }
 
-
-.hole {
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  color: white;
-  border: 1px solid black
-
+.catStandSpeak {
+    position: relative;
+    top: -40vh;
+    left: 10vh;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.cursor {
-  position: fixed;
-  pointer-events:none;
-
-  transform: translate(-5%, 20%) scale(2);
-
-  z-index: 9999;
-}
-
-
-.nextLocation{
-  display: none;
-  position: fixed;
-  top: 50vh;
-  left: 50%;
+.catStandText {
+    position: absolute;
+    top: -40px;
+    left: -75px;
+    width: 200px;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
 }

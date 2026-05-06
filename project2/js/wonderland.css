@@ -1,0 +1,177 @@
+body{
+  margin:0;
+  width: 150vw;
+}
+
+.background {
+  z-index: -1;
+  background-image: url("https://www.shutterstock.com/image-photo/alice-wonderland-background-scene-path-600nw-2636199347.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150vw;
+  height: 100vh;
+}
+
+@keyframes rabbitFlip {
+  0% {
+    transform: scaleX(-1);
+  }
+  49.9% {
+    transform: scaleX(-1);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rabbitRun {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes falling {
+  0%   { top: -10vh;   opacity: 1;   transform: translate(-50%, 0) rotate(0deg)   scale(0.8); }
+  100% { top: 120vh;  opacity: 1;   transform: translate(-50%, 0) rotate(360deg) scale(1.4); }
+}
+
+
+.speechBubble {
+transform: translate(-100px, -100px);
+pointer-events: none;
+}
+
+.fallingObject {
+position: fixed;
+top: 50vh;
+pointer-events: none;
+opacity: 0;
+font-size: 32px;
+transform: translate(-50%, -50%) scale(0.1);
+animation: falling linear infinite;
+}
+
+.cursor {
+position: fixed;
+pointer-events: none;
+transform-origin: top left;
+transform: scale(2);
+z-index: 9999;
+}
+
+.nextLocation {
+position: absolute;
+top: 80vh;
+left: 100%;
+transform: translate(-50%, -50%);
+z-index: 100;
+width: 400px;
+height: 200px;
+}
+
+.table {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150vh);
+}
+
+.cake {
+  position: absolute;
+  bottom: 60px;
+  left: 25%;
+  transform: translateX(-40%) translateY(-200vh);
+}
+
+.water {
+  position: absolute;
+  bottom: 60px;
+  left: 70%;
+  transform: translateX(-50%) translateY(-150vh);
+}
+
+.catStandWrapper {
+  position: absolute;
+  top: 30vh;
+  left: 30vh;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out 1s;
+}
+
+.catStand {
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+
+  width: 250px;
+
+  opacity: 1;
+  transition: opacity 1s ease-in-out 1s;
+  z-index: 1000;
+}
+
+.catStandSpeak {
+  position: relative;
+  top: -40vh;
+  left: 10vh;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.catStandText {
+  position: absolute;
+  top: -40px;
+  left: -75px;
+  width: 200px;
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.rabbit {
+  position: absolute;
+  z-index: 2000;
+  height: 200px;
+  bottom: 10%;
+  left: 10%;
+
+  animation: rabbitRun 6s linear infinite;
+
+  pointer-events: auto;
+}
+
+.rabbit img{
+    animation: rabbitFlip 6s linear infinite;
+    transition: transform 0.2s;
+}
+
+.rabbitText {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  
+  transform: translateX(-50%); 
+
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px 12px;;
+  font-size: 14px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  pointer-events: none;
+}
