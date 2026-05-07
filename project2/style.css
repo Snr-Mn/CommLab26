@@ -1,8 +1,182 @@
+
+
 body {
     margin: 0;
     height: 5000vh;
-    background-color: black;
+    background: black;
+    font-family: 'Jost', sans-serif;
+    color: #f5ede0;
 }
+
+/* ── Story ── */
+.story {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    background: #000;
+}
+
+.bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #f5ede0;
+}
+
+.specialWord {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #a07840;
+}
+
+.story div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vh 12vw;
+    box-sizing: border-box;
+
+    scroll-snap-align: start;
+}
+
+.story div:nth-child(1) h1 {
+    font: 900 120px 'Playfair Display', serif;
+    line-height: 0.95;
+    margin: 0.5rem 0 0;
+}
+.story div:nth-child(1) small {
+    font: 400 13px 'EB Garamond', serif;
+    text-transform: uppercase;
+    color: #a07840;
+}
+
+.story div:nth-child(2) p {
+    font: italic 400 48px 'EB Garamond', serif;
+    line-height: 1.5;
+    max-width: 28ch;
+    color: #cbbfa8;
+}
+
+.story div:nth-child(3) p {
+    font: 400 28px 'EB Garamond', serif; 
+    line-height: 1.7;
+    max-width: 40ch;
+    color: #7a6e5f;
+    border-left: 2px solid #333;
+    padding-left: 32px;
+}
+.story div:nth-child(3) em {
+    color: #cbbfa8;
+    font-style: italic;
+}
+
+.story div:nth-child(4) p {
+    font: 300 40px 'Playfair Display', serif; 
+    line-height: 1.4;
+    max-width: 32ch;
+    color: #9e8e78;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.s-flash h2 {
+    font: 900 160px 'Playfair Display', serif;
+    line-height: 1;
+    
+    margin: 0;
+}
+.s-flash p {
+    font: italic 400 28px 'EB Garamond', serif; 
+    margin-top: 16px;
+}
+
+.s-quote h1 {
+    font: italic 400 72px 'Playfair Display', serif; 
+    line-height: 1.35;
+    margin: 0;
+    quotes: none;
+}
+.s-quote h2 {
+    display: block;
+    font: 400 13px 'EB Garamond', serif;
+    
+    text-transform: uppercase;
+    color: #6b5e4a;
+    margin-top: 32px;
+}
+
+.story div:nth-child(7) p {
+    font: 400 28px 'EB Garamond', serif;
+    line-height: 1.7;
+    max-width: auto;
+    color: #cbbfa8;
+}
+
+.s-chase p:first-child {
+    font: italic 400 20px 'EB Garamond', serif;
+    color: #a07840;
+    
+    margin-bottom: 16px;
+}
+.s-chase h2 {
+    font: italic 700 80px 'Playfair Display', serif; 
+    line-height: 1.1;
+    margin-bottom: 48px;
+}
+.s-chase p:last-child {
+    font: 400 22px 'EB Garamond', serif; 
+    color: #9e8e78;
+    max-width: 38ch;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.s-outro p {
+    font: italic 400 56px 'Playfair Display', serif; 
+    color: #7a6e5f;
+    line-height: 1.6;
+    margin: 0;
+}
+.s-outro strong {
+    display: block;
+    font: 900 72px 'Playfair Display', serif;
+    font-style: normal;
+    color: #f5ede0;
+}
+.s-outro small {
+    display: block;
+    font: 400 14px 'EB Garamond', serif; 
+    
+    text-transform: uppercase;
+    color: #a07840;
+    margin-top: 48px;
+}
+
+.s-flash { 
+    background: #f5ede0; 
+    color: #0a0604; 
+    align-items: center; 
+    text-align: center; 
+}
+.s-quote { 
+    background: #08060a; 
+    align-items: center; 
+    text-align: center; 
+}
+.s-chase { 
+    border-left: 3px solid #a07840; 
+}
+.s-outro { 
+    align-items: center; 
+    text-align: center; 
+    min-height: 60vh; 
+}
+
+
 
 .foreground {
     position: fixed;
@@ -15,11 +189,11 @@ body {
 }
 
 .layers {
-    width: 100%;
-    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -32,11 +206,12 @@ body {
 }
 
 .rabbit {
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
-    z-index: 2000;
     left: 50%;
-    height: 200px;
     top: 30%;
+    z-index: 2000;
     transform: translate(-50%, 0%);
     pointer-events: auto;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -53,10 +228,8 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 
-#tree {
-    width: 100%;
-    height: 100%;
-    display: block;
+#tree { 
+    width: 100%; height: 100%; display: block; 
 }
 
 #door {
@@ -69,18 +242,18 @@ body {
 
 .rabbitText {
     position: absolute;
-    background-color: white;
-    border-radius: 12px;
-    padding: 8px 12px;
-    font-family: serif;
-    font-size: 14px;
-    white-space: nowrap;
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
+    background: white;
+    color: black;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.5s ease-out;
     pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.5s ease-out;
 }
 
 .rabbitText::after {
@@ -93,10 +266,21 @@ body {
     border-bottom: none;
     border-top-color: white;
 }
-
-.rabbit img {
-    transition: transform ease-out .5s;
-    z-index: inherit;
+.rabbitBurst {
+    position: fixed;
+    pointer-events: none;
+    z-index: 3000;
+    opacity: 0;
+    font-size: 14px;
+    white-space: nowrap;
+    background: white;
+    color: black;
+    border-radius: 12px;
+    padding: 8px 12px;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+.rabbit img { 
+    transition: transform 0.5s ease-out; 
 }
 
 .cursor {

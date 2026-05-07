@@ -13,8 +13,6 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px';
 });
 
-
-
 function getScrollPercentage() {
     // how many pixels have we scrolled yet?
     let scrolledAlready = window.scrollY;
@@ -41,7 +39,6 @@ layers.forEach(layer => {
 
 window.addEventListener("scroll", () => {
     percentage = getScrollPercentage()
-    console.log(percentage)
     layers.forEach(layer => {
         const depth = parseFloat(layer.dataset.depth) * 3;
         const scale = depth + depth * percentage * 10
@@ -52,9 +49,7 @@ window.addEventListener("scroll", () => {
         layer.style.top = `${scale * 10}px`;
     });
 
-
-
-
+    // tree fade in at 0.8
     if (percentage > 0.8) {
         tree.style.display = 'block';
         tree.style.opacity = 1;
@@ -63,25 +58,14 @@ window.addEventListener("scroll", () => {
         tree.style.opacity = 0;
     }
 
-    if (percentage < 0.08) {
-        rabbit.style.opacity = '0';
-        rabbitIMG.style.opacity = '0';
-        rabbit.style.pointerEvents = 'none';
-    } else if (percentage > 0.18) {
-        rabbitText.style.opacity = '1';
-    }
-    else if (percentage > 0.95) {
+    // rabbit end sequence at 0.95
+    if (percentage > 0.95) {
         const endProgress = (percentage - 0.95) / 0.05;
-
-
         rabbit.style.opacity = 1 - endProgress;
         rabbit.style.transform = `translate(-50%, ${endProgress * 40}%) scale(${1 - endProgress * 0.5})`;
     } else {
-        rabbitText.style.opacity = '0';
         tree.style.display = 'none';
-        rabbit.style.opacity = '1';
-        rabbitIMG.style.opacity = '1';
-        rabbit.style.pointerEvents = 'auto';
+        rabbit.style.opacity = 1;
         rabbit.style.transition = '';
         rabbit.style.top = `${80 - percentage * 30}%`;
         rabbit.style.transform = `translate(-50%, 0%)`;
