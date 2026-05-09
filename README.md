@@ -35,3 +35,6 @@ This website tells the story of how Alice entered the Wonderland.
 A restless afternoon. A rabbit with a watch. A hole in the ground. Down She Goes is a scroll-driven web experience that pulls you through the moment Alice stopped sitting still.
 
 ### [**For Myself & Instructors**](https://docs.google.com/document/d/1CZqV9DNEoIH2IiicFE1DANB9xTwqvuLLMiqMcHZLM4k/edit?usp=sharing)
+
+
+[![Watch the video](https://docs.google.com/document/d/1zE12WIcUSR4uuuGpHY6M7c_oseJXHMQKOgolUF_WZN8/edit?usp=sharing)](https://docs.google.com/document/d/1zE12WIcUSR4uuuGpHY6M7c_oseJXHMQKOgolUF_WZN8/edit?usp=sharing
